@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    
+    public static int x(int saldo){
+        int administrasi = (saldo - 7000);
+        return administrasi;
+    }
+    public static double bonus1(int administrasi,int setoran){
+        double bonus = (administrasi+setoran)*0.0005;
+        return bonus;
+    }
+    
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int saldo = input.nextInt();
+        int administrasi = x(saldo);
+        
+        int setoran = input.nextInt();
+        double bonus = bonus1(administrasi,setoran);
+        
+        
+        
+        System.out.println(administrasi+bonus+setoran);
+        
+    }
+}
